@@ -1,0 +1,116 @@
+.storiesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.allCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  row-gap: 30px;
+  margin: auto;
+  margin-top: 2%;
+  width: 90%;
+}
+.description {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12%;
+}
+.description p {
+  font-size: 17px;
+  font-weight: 700;
+  color: rgb(96, 93, 93);
+}
+.storiesTitle {
+  font-size: 30px;
+  color: rgb(26, 26, 121);
+  margin-left: 12%;
+}
+.storiesTitle h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.searchBar {
+  margin-bottom: 1%;
+  margin-left: 20px;
+  position: relative;
+  display: inline-block;
+}
+.belowCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+
+.heading1 {
+  text-align: center;
+  color: rgb(23, 23, 154);
+}
+
+.heading2 {
+  text-align: center;
+  color: rgb(55, 55, 192);
+  font-size: 23px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.searchBar {
+  margin-top: 30px;
+}
+.searchBar input[type="text"] {
+  padding: 13px 18px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  outline: none;
+  width: 430px;
+  position: relative;
+}
+
+.searchBar input[type="text"]::placeholder {
+  font-size: 14px;
+}
+.searchBar button[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(43, 68, 202, 1) 0%,
+    rgba(14, 208, 235, 1) 70%
+  );
+  font-size: 16px;
+  color: white;
+  padding: 13px 18px;
+  border-radius: 0 30px 30px 0;
+  outline: none;
+  border: none;
+}
+@media screen and (max-width: 768px) {
+  .allCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .storiesContainer {
+    margin-left: 30px;
+  }
+  .searchBar input[type="text"] {
+    padding: 13px 18px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    outline: none;
+    width: 350px;
+    position: relative;
+    margin-left: -25px;
+  }
+}

@@ -1,0 +1,184 @@
+.footer {
+  margin-top: 100px;
+  background: linear-gradient(
+    90deg,
+    rgba(43, 68, 202, 1) 0%,
+    rgba(14, 208, 235, 1) 100%
+  );
+  height: 280px;
+}
+
+.heart {
+ color: red !important;
+}
+
+a  {
+  text-decoration: none !important;
+}
+
+.partLink {
+  text-decoration: none;
+}
+
+ul li {
+  font-size: 13px;
+  margin-top: 25px;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.partners h1 {
+  color: white;
+  font-size: 35px;
+}
+.about {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.support {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about h1 {
+  color: white;
+  font-size: 35px;
+}
+.about ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+}
+.about ul li {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.support ul li {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partner ul li {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partner ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+}
+.support ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+}
+.support h1 {
+  color: white;
+  font-size: 35px;
+}
+.partner h1 {
+  color: white;
+  font-size: 35px;
+}
+.partnerLogo {
+  width: 100px;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.whatsapp {
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+}
+.whatsapp h3 {
+  text-align: center;
+}
+.reader {
+  width: 100px;
+  height: 80px;
+  margin-bottom: 10px;
+  display: flex;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin: 0 15px;
+}
+.footer1 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  word-spacing: 10px;
+}
+
+@media screen and (max-width: 882px) {
+  .footer {
+    width: 105.1%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .widthFooter {
+    width: 100% !important;
+  }
+
+  .partners {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  .whatsapp {
+    margin-left: 100px;
+  }
+  .reader {
+    margin-left: 0;
+  }
+  .icons {
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .footerContainer {
+    width: 460px;
+  }
+}

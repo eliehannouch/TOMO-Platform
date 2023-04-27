@@ -1,0 +1,124 @@
+.stayContainer{
+    display: flex;
+    width: 85%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 5%;
+    flex-direction: column;
+}
+.stayContainer h4{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(34, 71, 115);
+}
+.subContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 150px;
+    margin-top: 80px;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkBox{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: gray;
+    font-size: 17px;
+}
+.checkBox input {
+    height: 20px;
+    width: 20px;
+}
+.checkBox label {
+    font-size: 20px;
+}
+
+.image img {
+    width: 400px;
+    height: 400px;
+}
+.form form input[type="email"] {
+    display: block;
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    margin-left: 35px;
+}
+.form form input[type="email"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit button{
+    border-radius: 15px;
+    background: linear-gradient(
+      90deg,
+      rgba(43, 68, 202, 1) 0%,
+      rgba(14, 208, 235, 1) 70%
+    );
+    width: 250px;
+    padding: 5px;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+@media screen and(max-width:390px) {
+    .form form input[type="email"]{
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width:916px) {
+    .subContainer{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column-reverse;
+        row-gap: 150px;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .stayContainer{
+        margin-top: 100px;
+    }
+    .image img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form form{
+        width: 90%;
+    }
+    .form form input[type="email"]{
+        width: 400px;
+    }
+}
+

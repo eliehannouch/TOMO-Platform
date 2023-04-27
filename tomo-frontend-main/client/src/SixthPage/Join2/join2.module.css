@@ -1,0 +1,176 @@
+.joinContainer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title1 {
+  margin-bottom: 40px;
+  color: rgb(34, 71, 115);
+}
+.title1 h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.allAnswers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.rowAnswer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  box-shadow: 5px 5px 8px #888888;
+  width: 550px;
+  margin-bottom: 35px;
+  border-radius: 5px;
+  font-size: 25px;
+}
+.answerText {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(34, 71, 115);
+}
+.icon {
+  margin-right: 30px;
+}
+.icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.becomeTitle {
+  font-size: 30px;
+  margin-top: 50px;
+  color: rgb(34, 71, 115);
+}
+.becomeTitle h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.subBecome {
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: rgb(34, 71, 115);
+  font-weight: 100;
+  text-align: center;
+}
+
+.sendButton {
+  background: linear-gradient(
+    90deg,
+    rgba(43, 68, 202, 1) 0%,
+    rgba(14, 208, 235, 1) 70%
+  );
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  width: 100%;
+}
+.container form input[type="text"],
+.container form input[type="email"],
+.container form textarea {
+  display: block;
+  width: 700px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+}
+.container form input[type="text"]:focus,
+.container form input[type="email"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.container form button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+.contact__container {
+  margin: auto;
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .container form input[type="text"],
+  .container form input[type="email"],
+  .container form textarea {
+    display: block;
+    max-width: 420px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .title1 {
+    text-align: center;
+  }
+  .subBecome {
+    text-align: center;
+    font-size: 30px;
+  }
+  /* .rowAnswer{
+    width: 390px;
+  } */
+}
+
+@media screen and (max-width: 490px) {
+  .rowAnswer {
+    width: 390px;
+  }
+  .subBecome {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .joinContainer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 5%;
+    margin-left: 16px;
+  }
+  .becomeTitle {
+    text-align: center;
+  }
+  .subBecome {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,120 @@
+.joinContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title {
+  margin-bottom: 40px;
+  color: rgb(34, 71, 115);
+}
+.title h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.allNextStory {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 100px;
+}
+.imgNextStory img {
+  border-radius: 5px;
+  width: 350px;
+  height: 350px;
+}
+.buttonStory {
+  padding: 5%;
+}
+.buttonStory button {
+  border: none;
+  width: 100%;
+  padding: 1%;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 7px;
+  background-color: rgb(11, 84, 170);
+}
+.icon {
+  margin-right: 30px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.icon img {
+  width: 30px;
+  height: 30px;
+}
+.frequentlyTitle {
+  padding-top: 100px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: rgb(26, 26, 121);
+}
+.frequentlyTitle h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.askedQuestions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.rowQuestion {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  box-shadow: 5px 5px 8px #888888;
+  width: 620px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.questionText {
+  color: rgb(34, 71, 115);
+  font-size: 20px;
+}
+.answers {
+  font-weight: 600;
+  margin-left: 11%;
+}
+
+@media screen and (max-width: 720px) {
+  .allNextStory {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 558px) {
+  .rowQuestion {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 494px) {
+  .rowQuestion {
+    width: 410px;
+  }
+  .frequentlyTitle {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 390px) {
+  .frequentlyTitle {
+    text-align: center;
+  }
+  .rowQuestion {
+    width: 410px;
+  }
+  .askedQuestions {
+    margin: auto;
+  }
+}

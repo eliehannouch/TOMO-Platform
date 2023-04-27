@@ -1,0 +1,253 @@
+.joinContainer3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title3 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: rgb(34, 71, 115);
+}
+.title3 h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.upcoming {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.upcomingTitle {
+  margin-top: -20px;
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: rgb(34, 71, 115);
+  text-align: center;
+}
+.upcomingTitle h2{
+  font-size: 30px;
+  font-weight: 700;
+}
+.allAnswers {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.rowAnswer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  box-shadow: 5px 5px 8px #888888;
+  width: 550px;
+  margin-bottom: 35px;
+  border-radius: 15px;
+  font-size: 25px;
+}
+.answerText {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(34, 71, 115);
+}
+.icon {
+  margin-right: 30px;
+}
+.icon img {
+  width: 30px;
+  height: 30px;
+}
+.eventListings {
+  margin-top: 50px;
+  padding: 0;
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+}
+.eventListings .eventListing {
+  position: relative;
+  border: 1px solid #eee;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  border-radius: 15px;
+}
+.eventListing:hover {
+  border-left: 7px solid rgb(81, 102, 222);
+}
+.eventListingPosition h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+.eventListingLogo img {
+  border-radius: 7px;
+}
+.eventListingLogo {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 150px;
+  flex: 0 0 245px;
+  border-right: 1px solid #eee;
+}
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+}
+.eventListingPosition strong {
+  color: #b3b3b3;
+}
+.register a {
+  background: linear-gradient(
+    90deg,
+    rgba(43, 68, 202, 1) 0%,
+    rgba(14, 208, 235, 1) 70%
+  );
+  padding: 5px 10px;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.register:hover a {
+  text-decoration: none;
+  color: white;
+}
+.links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  flex-direction: row;
+  margin-top: -15px;
+}
+.badge {
+  color: #fff;
+  padding: 5px 25px;
+  background-color: #ef4444;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Pagination */
+.customPagination {
+  margin-top: 10%;
+}
+.customPagination a {
+  width: 40px;
+  height: 40px;
+  line-height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #dee2e6;
+  text-align: center;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.customPagination a.prev,
+.customPagination a.next {
+  width: 70px;
+  height: 40px;
+  line-height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+}
+
+.customPagination a.active,
+.customPagination a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(43, 68, 202, 1) 0%,
+    rgba(14, 208, 235, 1) 70%
+  );
+  color: #fff;
+}
+
+@media screen and (max-width: 390px) {
+  .title3 {
+    margin: auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 490px) {
+  .joinContainer3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 5%;
+    margin-left: 16px;
+  }
+  .allAnswers {
+    padding-top: 10%;
+  }
+  .rowAnswer {
+    width: 390px;
+  }
+  .subBecome {
+    font-size: 28px;
+  }
+  .upcomingTitle {
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: rgb(34, 71, 115);
+  }
+  .upcomingTitle h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .description {
+    font-size: 20px;
+  }
+  .eventListingPosition {
+    margin-top: 10px;
+  }
+  .links {
+    margin-bottom: 20px;
+    margin-right: 35px;
+  }
+}
+
+@media screen and (max-width: 566px) {
+  .eventListing {
+    margin: auto;
+  }
+  .eventListingLogo img {
+    width: 100%;
+  }
+  .links{
+    margin-right: 35px;
+  }
+  .description{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1014px) {
+  .eventListing {
+    width: 90%;
+    margin: auto;
+  }
+  .links {
+    margin-top: 5px;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and(max-width:954px) {
+  .links {
+    margin-bottom: 15px !important;
+  }
+}
+

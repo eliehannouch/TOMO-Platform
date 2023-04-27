@@ -1,0 +1,243 @@
+.banner {
+  margin-top: 20px;
+}
+
+.bannerHeader {
+  color: rgb(35, 35, 134);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  /* margin-left: 30px !important;  */
+}
+.customPagination a {
+  width: 40px;
+  height: 40px;
+  line-height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #dee2e6;
+  text-align: center;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.customPagination a.prev,
+.customPagination a.next {
+  width: 70px;
+  height: 40px;
+  line-height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+}
+
+.customPagination a.active,
+.customPagination a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(43, 68, 202, 1) 0%,
+    rgba(14, 208, 235, 1) 70%
+  );
+  color: #fff;
+}
+.bannerBodyHeader {
+  color: rgb(26, 26, 186);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.filter {
+  margin-left: 40px;
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: 18px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.filterHeader {
+  background: linear-gradient(
+    90deg,
+    rgba(43, 68, 202, 1) 0%,
+    rgba(14, 208, 235, 1) 70%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+}
+.checkboxContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.checkboxLabel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+input[type="checkbox"] {
+  margin-left: 40px;
+}
+.content {
+}
+.checkboxInput {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+}
+
+.checkboxInput:checked {
+  background-color: #3f51b5;
+  border-color: #3f51b5;
+}
+
+.checkboxText {
+  font-size: 18px;
+  color: #333;
+}
+.filterOptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.searchBar {
+  margin-top: 3%;
+  margin-bottom: 1%;
+  position: relative;
+  display: inline-block;
+}
+.centeredDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchBar input[type="text"] {
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  outline: none;
+  width: 500px;
+  position: relative;
+  margin: auto;
+}
+.searchBar input[type="text"]::placeholder {
+  font-size: 19px;
+}
+.searchBar button[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(43, 68, 202, 1) 0%,
+    rgba(14, 208, 235, 1) 70%
+  );
+  font-size: 16px;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 0 30px 30px 0;
+  outline: none;
+  border: none;
+}
+.cards {
+  max-width: 100%;
+  margin-left: 65px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  margin-top: 20px;
+  column-gap: 10px;
+  
+}
+.bannerBody {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  margin-left: -15px;
+}
+.actionButton {
+  background: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .bannerBody {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+  }
+  .filter {
+    margin-left: 0px;
+    margin-top: -5px;
+  }
+  .searchBar input[type="text"] {
+    width: 550px;
+  }
+  .searchBar {
+    margin-top: 3%;
+    margin-bottom: 1%;
+    position: relative;
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .bannerBody {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .bannerBody {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .filter {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .searchBar input[type="text"] {
+    width: 350px;
+  }
+  .searchBar {
+    margin-top: 3%;
+    margin-bottom: 1%;
+    position: relative;
+    display: inline-block;
+  }
+}
